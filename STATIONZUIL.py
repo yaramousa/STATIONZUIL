@@ -9,3 +9,4 @@ stations = ['utrecht','enschede','henglo']
 station = random.choice(stations)
 
 
+
