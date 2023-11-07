@@ -27,6 +27,8 @@ def feedeback():
                  writer = csv.writer(bestand)
                  writer.writerow([bericht, naam, datum,tijd, station_city])
 
+
+
 while True:
     feedeback()
 
