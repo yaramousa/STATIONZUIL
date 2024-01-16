@@ -2,17 +2,15 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 import requests
-import psycopg2
+import psycopg2 as pg
 
-# connection_string = "dbname='stationzuil2' user='postgres' password='123456 yara dilmon',port='5432',host='localhost"
-# conn = psycopg2.connect(connection_string)
-# cursor = conn.cursor()
-
-
-# om de verbinding te maken met post-SQl database
-connection_string = "dbname='stationzuil2' user='postgres' password='123yy'"
-conn = psycopg2.connect(connection_string)
+#connection_string = "dbname='stationzuil2', 'user='postgres', 'password='123456 yara dilmon', host='20.90.189.40'"
+conn = pg.connect(dbname='stationzuil2', user='postgres', password='123456yaradilmon', host='20.90.189.40')
 cursor = conn.cursor()
+
+
+
+
 # deze functie is voor de logo ns
 def NS_logo():
     NS_path = "img/Logo-NS-v2.png"
